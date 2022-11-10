@@ -1,0 +1,123 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-weight: 400;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*  ========== Header area start  ==============  */
+.headerArea {
+    background-color: #3498db;
+    padding: 14px 0;
+}
+
+.headerText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 3px 13px;
+}
+
+/*  ========== Header area End  ==============  */
+
+/*  ========== Cart area Start  ==============  */
+.mainCart {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.tShartArea {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.singleTshart {
+    background-color: blueviolet;
+    padding: 15px 10px;
+}
+
+.singleTshart img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.singleTshartText {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 16px 0;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/*  ========== Cart area End  ==============  */
+.btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover: bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+}
