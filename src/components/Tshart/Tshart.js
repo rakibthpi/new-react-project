@@ -9,7 +9,7 @@ const Tshart = ({ tshart, addToCart }) => {
             <div className='singleTshartText'>
                 <h2>{name}</h2>
                 <p>Price: ${price}</p>
-                <button className='btn-primary' onClick={() => { tshart() }}>Add To Cart</button>
+                <button className='btn-primary' onClick={() => addToCart(tshart)}>Add To Cart</button>
             </div>
         </div>
     );

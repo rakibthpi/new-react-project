@@ -7,8 +7,11 @@ const Home = () => {
 
     const [cart, setCart] = useState([]);
     const addToCart = (selectItem) => {
-        console.log(selectItem);
+        let newItem = [...cart, selectItem];
+        setCart(newItem)
     }
+
+    console.log(cart);
     return (
         <div className='mainCart'>
             <div className="tShartArea">
@@ -23,6 +26,7 @@ const Home = () => {
             <div className="cartArea">
                 <div className="cartSubArea">
                     <h1>Hello rakib How are you </h1>
+                    <p>{cart.length}</p>
                 </div>
             </div>
         </div>
