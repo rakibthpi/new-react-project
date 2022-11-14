@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useTShart from '../../hooks/useTShart';
+import Cart from '../Cart/Cart';
 import Tshart from '../Tshart/Tshart';
 
 const Home = () => {
@@ -7,11 +8,22 @@ const Home = () => {
 
     const [cart, setCart] = useState([]);
     const addToCart = (selectItem) => {
-        let newItem = [...cart, selectItem];
-        setCart(newItem)
+        const axsis = cart.find(tShart => tShart._id === selectItem._id);
+        if (!axsis) {
+            let newItem = [...cart, selectItem];
+            setCart(newItem)
+        }
+        else {
+            alert("This is alrady axsis");
+        }
+
     }
 
-    console.log(cart);
+    const handelRemoveItem = (SelectionItem) => {
+        const rest = cart.filter(tshart => tshart._id !== SelectionItem._id);
+        setCart(rest);
+    }
+
     return (
         <div className='mainCart'>
             <div className="tShartArea">
@@ -25,8 +37,10 @@ const Home = () => {
             </div>
             <div className="cartArea">
                 <div className="cartSubArea">
-                    <h1>Hello rakib How are you </h1>
-                    <p>{cart.length}</p>
+                    <Cart
+                        cart={cart}
+                        handelRemoveItem={handelRemoveItem}
+                    ></Cart>
                 </div>
             </div>
         </div>

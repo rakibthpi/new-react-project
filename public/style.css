@@ -117,7 +117,24 @@ a {
     margin-top: 15px;
 }
 
-/*  ========== Cart area End  ==============  */
-.btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover: bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+.cartArea {
+    background-color: #34495e;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5px;
 }
+
+.cardItem {
+    border: 1px solid red;
+    padding: 15px 2px;
+    margin: 7px 2px;
+}
+
+.cartSubArea {
+    position: sticky;
+    top: 0;
+
+}
+
+/*  ========== Cart area End  ==============  */
