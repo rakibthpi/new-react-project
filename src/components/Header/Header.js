@@ -16,6 +16,7 @@ const Header = () => {
                                 <Link className={pathname === "/home" ? "activebtn" : "navLink"} to='/home'>Home</Link>
                                 <Link className={pathname === "/orderreview" ? "activebtn" : "navLink"} to='/orderreview'>OrderReview</Link>
                                 <Link className={pathname === "/cart" ? "activebtn" : "navLink"} to='/cart'>Cart</Link>
+                                <Link className={pathname === "/grandfather" ? "activebtn" : "navLink"} to="/grandfather">GrandFather</Link>
                             </li>
                         </ul>
                     </nav>

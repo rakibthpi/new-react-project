@@ -39,6 +39,11 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -138,3 +143,37 @@ a {
 }
 
 /*  ========== Cart area End  ==============  */
+/*  ==========  Start Grandfather page   ==============  */
+.grandfather {
+    /* padding: 20px; */
+}
+
+.grandfatherText {
+    border: 2px solid tomato;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.grandfatherCard {
+    border: 2px solid saddlebrown;
+}
+
+.grandmother {
+    border: 2px solid brown;
+    margin: 5px;
+}
+
+.mother-sub div,
+.father-sub div {
+    padding: 10px 20px;
+}
+
+.btn-increse {
+    background: blue;
+    color: #fff;
+    padding: 5px 17px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/*  ==========   End GrandFather Page   ==============  */

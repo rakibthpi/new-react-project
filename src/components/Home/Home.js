@@ -18,7 +18,6 @@ const Home = () => {
         }
 
     }
-
     const handelRemoveItem = (SelectionItem) => {
         const rest = cart.filter(tshart => tshart._id !== SelectionItem._id);
         setCart(rest);

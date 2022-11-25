@@ -1,9 +1,25 @@
 import React from 'react';
 
 const Cart = ({ cart, handelRemoveItem }) => {
+    // Conditional Rendering Option
+    // Element Variable 
+    let commend;
+    if (cart.length === 0) {
+        commend = <p>Please, Add Once item</p>;
+    }
+    else if (cart.length === 1) {
+        commend = <p>Plese, Add once more item</p>;
+    }
+    else {
+        commend = <p>Thank you so much!</p>;
+    }
+
     return (
         <div>
-            <h1 className='text-3xl font-bold'>This is cart js page {cart.length} </h1>
+            <h1 className='text-3xl font-bold'>This is cart js page </h1>
+            {
+                commend
+            }
             {
                 cart.map(scart => <div className='cardItem' key={scart._id}>
                     <h2>Name: {scart.name}</h2>
